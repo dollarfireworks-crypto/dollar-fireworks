@@ -161,38 +161,16 @@
             background: #121216;
         }
 
-        /* Reviews Section */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 80px;
-        }
-
-        .review-card {
+        /* Widget Containers */
+        .widget-container {
             background-color: var(--card-bg);
-            padding: 25px;
-            border-radius: 8px;
-            position: relative;
-        }
-
-        .stars {
-            color: var(--brand-yellow);
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .review-text {
-            font-style: italic;
-            color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .reviewer-name {
-            font-weight: bold;
-            color: var(--brand-red);
-            font-size: 0.95rem;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 200px; /* Gives it space before it loads */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #444;
         }
 
         /* Footer / Contact Details */
@@ -271,75 +249,40 @@
             </div>
         </section>
 
-        <!-- Live Visual Gallery from the Stands -->
+        <!-- Static Gallery -->
         <section id="gallery">
-            <h2 class="section-title">Our Stands & Happy Customers</h2>
+            <h2 class="section-title">Our Stands</h2>
             <p class="section-subtitle">Look for our red container stands, bright yellow banners, and flags along the bypass road.</p>
             
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="dollarfireworks3.jpg" alt="Dollar Fireworks Stand Side View">
-                    <div class="gallery-caption">Our main high-visibility red container setup with the signature Buy 1 Get 2 Free signage.</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="dollarfireworks5.jpg" alt="Dollar Fireworks Highway View">
-                    <div class="gallery-caption">Convenient drive-up lot with flags flying proud—easy to spot from the road.</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="dollarfireworks4.jpg" alt="Massive Assortment Packages">
-                    <div class="gallery-caption">Huge People's Choice assortments loaded up and ready for the grand finale.</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="dollarfireworks1.jpg" alt="Satisfied Customer at Dollar Fireworks">
-                    <div class="gallery-caption">Great neighborhood service and deals that keep our local community smiling.</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="dollarfireworks6.jpg" alt="Fully Stocked Counter Shelves">
-                    <div class="gallery-caption">Shelves packed high with premium inventory so you always have the best selection.</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="dollarfireworks7.jpg" alt="Friendly Staff Helping Customers">
-                    <div class="gallery-caption">Abdul and the team spend time helping you select exactly what fits your show.</div>
-                </div>
+                <div class="gallery-item"><img src="dollarfireworks3.jpg" alt="Dollar Fireworks Stand Side View"></div>
+                <div class="gallery-item"><img src="dollarfireworks5.jpg" alt="Dollar Fireworks Highway View"></div>
+                <div class="gallery-item"><img src="dollarfireworks4.jpg" alt="Massive Assortment Packages"></div>
+                <div class="gallery-item"><img src="dollarfireworks8.jpg" alt="Buy 1 Get 2 Free Fireworks"></div>
+                <div class="gallery-item"><img src="dollarfireworks9.jpg" alt="Best Fireworks in Houston"></div>
+                <div class="gallery-item"><img src="dollarfireworks1.jpg" alt="Satisfied Customer at Dollar Fireworks"></div>
+                <div class="gallery-item"><img src="dollarfireworks6.jpg" alt="Fully Stocked Counter Shelves"></div>
+                <div class="gallery-item"><img src="dollarfireworks7.jpg" alt="Friendly Staff Helping Customers"></div>
             </div>
         </section>
 
-        <!-- Google Reviews Integration -->
+        <!-- AUTO-UPDATING GOOGLE REVIEWS SECTION -->
         <section id="reviews">
             <h2 class="section-title">What the Neighborhood Says</h2>
-            <p class="section-subtitle">Real feedback left by local buyers directly on our Google page.</p>
+            <p class="section-subtitle">Live reviews pulled directly from our Google Business Profile.</p>
             
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Not waiting till July 4th for fireworks this year... Abdul makes deals with everyone before the last day. Got my box of Roman candles early."</p>
-                    <div class="reviewer-name">— Arianny Reyes</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Best Buy one get two free fireworks in all of Texas. Check my boy out"</p>
-                    <div class="reviewer-name">— CATRENA Millender</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Came here with $5 and this guy gave me a bag full. Legit 100%"</p>
-                    <div class="reviewer-name">— Karina Fernandez</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Dollar fireworks has very affordable prices since they opened... teamwork superb so friendly plz everyone Houston check them super special price"</p>
-                    <div class="reviewer-name">— Gurpreet Singh</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Best part is the customer service. They will spend time to figure out what you want and help you pick the best Fireworks."</p>
-                    <div class="reviewer-name">— Abdul Maqsood</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Great people and prices. Can’t wait to celebrate our country’s 250th anniversary with the most beautiful and affordable fireworks in town."</p>
-                    <div class="reviewer-name">— Brian Roberts</div>
-                </div>
+            <div class="widget-container">
+                <!-- ========================================== -->
+                <!-- PASTE YOUR ELFSIGHT REVIEW CODE BELOW HERE -->
+                <!-- ========================================== -->
+                
+                <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f0f91751-dee3-4468-beca-be35d8c0d3fb" data-elfsight-app-lazy></div>
+
+                <!-- ========================================== -->
+                <!-- PASTE YOUR ELFSIGHT REVIEW CODE ABOVE HERE -->
+                <!-- ========================================== -->
             </div>
         </section>
 
@@ -354,7 +297,7 @@
             <p><strong>Call or Text Details:</strong> 832-660-1992</p>
             <div class="payment-badge"> Pay Accepted Here</div>
         </div>
-        <p style="color: #444; font-size: 0.85rem; margin-top: 40px;">&copy; 2026 Dollar Fireworks. Built for rapid deployment on Netlify.</p>
+        <p style="color: #444; font-size: 0.85rem; margin-top: 40px;">&copy; 2026 Dollar Fireworks.</p>
     </footer>
 
 </body>
