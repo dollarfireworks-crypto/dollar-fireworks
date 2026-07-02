@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollar Fireworks | Buy 1 Get 2 Free in Texas</title>
+    <style>
+        :root {
+            --brand-red: #d32f2f;
+            --brand-yellow: #ffeb3b;
+            --dark-bg: #0a0a0c;
+            --card-bg: #16161a;
+            --text-light: #ffffff;
+            --text-muted: #b3b3b3;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            scroll-behavior: smooth;
+        }
+
+        /* Hero / Banner Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(rgba(10, 10, 12, 0.85), rgba(10, 10, 12, 0.95)), url('dollarfireworks5.jpg') center/cover no-repeat;
+            border-bottom: 8px solid var(--brand-yellow);
+        }
+
+        .promo-badge {
+            background-color: var(--brand-yellow);
+            color: #000;
+            font-weight: 900;
+            padding: 10px 25px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            display: inline-block;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 235, 59, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-light);
+        }
+
+        .hero h1 span {
+            color: var(--brand-red);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 20px auto 40px auto;
+        }
+
+        .phone-btn {
+            background-color: var(--brand-red);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4);
+        }
+
+        .phone-btn:hover {
+            background-color: #b71c1c;
+            transform: translateY(-2px);
+        }
+
+        /* Main Layout Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: var(--brand-yellow);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        /* Features / Brands */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--brand-red);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: var(--text-light);
+        }
+
+        /* Photo Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 80px;
+        }
+
+        .gallery-item {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border: 1px solid #222;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            text-align: center;
+            background: #121216;
+        }
+
+        /* Reviews Section */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+
+        .review-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .stars {
+            color: var(--brand-yellow);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            color: var(--brand-red);
+            font-size: 0.95rem;
+        }
+
+        /* Footer / Contact Details */
+        footer {
+            background-color: #000000;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .footer-info {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .footer-info h2 {
+            color: var(--brand-yellow);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .footer-info p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .payment-badge {
+            background: #111;
+            border: 1px solid #333;
+            padding: 8px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+            .hero p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Header -->
+    <header class="hero">
+        <div class="promo-badge">★ Buy 1 Get 2 Free ★</div>
+        <h1>Dollar <span>Fireworks</span></h1>
+        <p>The Absolute Best Prices & Customer Service in All of Texas. Don't Wait Until the Last Day to Secure the Hookup!</p>
+        <a href="tel:8326601992" class="phone-btn">Call: 832-660-1992</a>
+    </header>
+
+    <div class="container">
+        
+        <!-- Selection Highlights -->
+        <section id="inventory">
+            <h2 class="section-title">Massive Selection & Brands</h2>
+            <p class="section-subtitle">Every kind of firework you need, stocked fresh every six months.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Top Premium Brands</h3>
+                    <p>We carry all the major names you know and trust, including Black Cat, Red Rhino, and Texas Fireworks staples.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Heavy Duty Cakes & Shells</h3>
+                    <p>From massive 500-gram multi-shot cakes to heavy artillery shell boxes like "The Judge Artillery" and "People's Choice."</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Backyard Assortments</h3>
+                    <p>Roman candles, novelties, sparklers, and grab bags. Tell us your budget—even if it's $5—and we will make a deal to pack your bag full!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Visual Gallery from the Stands -->
+        <section id="gallery">
+            <h2 class="section-title">Our Stands & Happy Customers</h2>
+            <p class="section-subtitle">Look for our red container stands, bright yellow banners, and flags along the bypass road.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="dollarfireworks3.jpg" alt="Dollar Fireworks Stand Side View">
+                    <div class="gallery-caption">Our main high-visibility red container setup with the signature Buy 1 Get 2 Free signage.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="dollarfireworks5.jpg" alt="Dollar Fireworks Highway View">
+                    <div class="gallery-caption">Convenient drive-up lot with flags flying proud—easy to spot from the road.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="dollarfireworks4.jpg" alt="Massive Assortment Packages">
+                    <div class="gallery-caption">Huge People's Choice assortments loaded up and ready for the grand finale.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="dollarfireworks1.jpg" alt="Satisfied Customer at Dollar Fireworks">
+                    <div class="gallery-caption">Great neighborhood service and deals that keep our local community smiling.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="dollarfireworks6.jpg" alt="Fully Stocked Counter Shelves">
+                    <div class="gallery-caption">Shelves packed high with premium inventory so you always have the best selection.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="dollarfireworks7.jpg" alt="Friendly Staff Helping Customers">
+                    <div class="gallery-caption">Abdul and the team spend time helping you select exactly what fits your show.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Reviews Integration -->
+        <section id="reviews">
+            <h2 class="section-title">What the Neighborhood Says</h2>
+            <p class="section-subtitle">Real feedback left by local buyers directly on our Google page.</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Not waiting till July 4th for fireworks this year... Abdul makes deals with everyone before the last day. Got my box of Roman candles early."</p>
+                    <div class="reviewer-name">— Arianny Reyes</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Best Buy one get two free fireworks in all of Texas. Check my boy out"</p>
+                    <div class="reviewer-name">— CATRENA Millender</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Came here with $5 and this guy gave me a bag full. Legit 100%"</p>
+                    <div class="reviewer-name">— Karina Fernandez</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Dollar fireworks has very affordable prices since they opened... teamwork superb so friendly plz everyone Houston check them super special price"</p>
+                    <div class="reviewer-name">— Gurpreet Singh</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Best part is the customer service. They will spend time to figure out what you want and help you pick the best Fireworks."</p>
+                    <div class="reviewer-name">— Abdul Maqsood</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Great people and prices. Can’t wait to celebrate our country’s 250th anniversary with the most beautiful and affordable fireworks in town."</p>
+                    <div class="reviewer-name">— Brian Roberts</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Contact & Map Footer -->
+    <footer>
+        <div class="footer-info">
+            <h2>Find Our Stand</h2>
+            <p><strong>Address:</strong> 7715 Farm to Market 1960 Bypass Rd W, Humble, TX 77338, United States</p>
+            <p><strong>Serving:</strong> Humble, Spring, Cypress, and the Greater Houston Area</p>
+            <p><strong>Call or Text Details:</strong> 832-660-1992</p>
+            <div class="payment-badge"> Pay Accepted Here</div>
+        </div>
+        <p style="color: #444; font-size: 0.85rem; margin-top: 40px;">&copy; 2026 Dollar Fireworks. Built for rapid deployment on Netlify.</p>
+    </footer>
+
+</body>
+</html>
